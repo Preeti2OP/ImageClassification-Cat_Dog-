@@ -95,6 +95,14 @@ def predict_image(imagepath, classifier):
 predict_image("/content/cat.4001.jpg",classifier)
 predict_image("/content/dog.4001.jpg",classifier)
 
+import matplotlib.pyplot as plt
+from tensorflow import keras
+from keras.preprocessing import image
+path="/content/cat.4001.jpg"
+img=image.load_img(path)
+plt.imshow(img)
+predict_image("/content/cat.4001.jpg",classifier)
+
 
 path="/content/dog.4001.jpg"
 img=image.load_img(path)
